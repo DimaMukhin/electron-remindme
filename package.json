@@ -1,0 +1,22 @@
+{
+  "name": "electron-remindme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaMukhin/electron-remindme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaMukhin/electron-remindme/issues"
+  },
+  "homepage": "https://github.com/DimaMukhin/electron-remindme#readme",
+  "dependencies": {
+    "electron": "^1.8.4"
+  }
+}
