@@ -23,6 +23,10 @@
             li.appendChild(text);
             document.querySelector('ul').appendChild(li);
         });
+
+        ipcRenderer.on('reminder:clear', (event) => {
+            document.querySelector('ul').innerHTML = "";
+        });
     </script>
 </body>
 </html>

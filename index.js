@@ -25,6 +25,10 @@ function createAddWindow() {
     addWindow.on('closed', () => addWindow = null);
 }
 
+function clearAllReminders() {
+    mainWindow.webContents.send('reminder:clear');
+}
+
 ipcMain.on('reminder:add', (event, reminder) => {
     mainWindow.webContents.send('reminder:add', reminder);
     addWindow.close();
@@ -37,6 +41,10 @@ const menuTemplate = [
             { 
                 label: 'New Reminder',
                 click() { createAddWindow(); }
+            },
+            {
+                label: 'Clear all reminders',
+                click() { clearAllReminders(); }
             },
             { 
                 label: 'Exit', 
