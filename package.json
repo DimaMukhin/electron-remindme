@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/DimaMukhin/electron-remindme#readme",
   "dependencies": {
-    "electron": "^9.4.0"
+    "electron": "^15.5.5"
   }
 }
